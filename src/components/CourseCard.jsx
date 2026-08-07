@@ -47,16 +47,29 @@ export function CourseCard({ course, index }) {
         </dl>
 
         <div className="mt-5 flex items-center justify-between gap-4">
-          <a
-            href={course.url}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex min-h-11 items-center gap-2 border border-[#d6a458]/70 bg-[#d6a458]/10 px-4 text-sm font-semibold text-[#f3d195] transition hover:bg-[#d6a458] hover:text-[#080c10]"
-          >
-            <BookOpen size={15} />
-            افتح الملخص
-            <ArrowUpLeft size={14} />
-          </a>
+          <div className="flex items-center gap-2">
+            <a
+              href={course.url}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex min-h-11 items-center gap-2 border border-[#d6a458]/70 bg-[#d6a458]/10 px-4 text-sm font-semibold text-[#f3d195] transition hover:bg-[#d6a458] hover:text-[#080c10]"
+            >
+              <BookOpen size={15} />
+              افتح الملخص
+              <ArrowUpLeft size={14} />
+            </a>
+            {course.pdfs?.map((pdf) => (
+              <a
+                key={pdf.url}
+                href={pdf.url}
+                download
+                className="inline-flex min-h-11 items-center gap-1.5 border border-white/10 bg-white/[0.03] px-3 text-xs font-medium text-[#bdc5cc] transition hover:border-[#8bc4d8]/40 hover:text-[#8bc4d8]"
+              >
+                <Download size={13} />
+                {pdf.label}
+              </a>
+            ))}
+          </div>
           <a
             href={course.sourceUrl}
             target="_blank"
@@ -68,22 +81,6 @@ export function CourseCard({ course, index }) {
             <ExternalLink size={12} />
           </a>
         </div>
-
-        {course.pdfs?.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2 border-t border-white/8 pt-4">
-            {course.pdfs.map((pdf) => (
-              <a
-                key={pdf.url}
-                href={pdf.url}
-                download
-                className="inline-flex items-center gap-1.5 border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[11px] font-medium text-[#bdc5cc] transition hover:border-[#8bc4d8]/40 hover:text-[#8bc4d8]"
-              >
-                <Download size={12} />
-                تحميل PDF {pdf.label}
-              </a>
-            ))}
-          </div>
-        )}
       </div>
     </article>
   );

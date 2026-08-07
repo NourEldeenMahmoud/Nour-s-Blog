@@ -13,8 +13,8 @@ export const courses = [
     image: "https://uploads.teachablecdn.com/attachments/c9b17ea78a28407782028acbe465b8ab.jpg",
     tags: ["JavaScript", "DOM", "Browser APIs"],
     pdfs: [
-      { url: "/javascript-part1.pdf", label: "Part 1" },
-      { url: "/javascript-part2.pdf", label: "Part 2" },
+      { url: "/javascript-part1.pdf", label: "تحميل Part 1" },
+      { url: "/javascript-part2.pdf", label: "تحميل Part 2" },
     ],
   },
   {
@@ -31,7 +31,7 @@ export const courses = [
     image: "https://uploads.teachablecdn.com/attachments/is8vWy6HQNaPf6EoZNt1_25.jpg",
     tags: ["REST", "HTTP", "ASP.NET Core"],
     pdfs: [
-      { url: "/restful-api.pdf", label: "PDF" },
+      { url: "/restful-api.pdf", label: "تحميل PDF" },
     ],
   },
   {
@@ -48,7 +48,7 @@ export const courses = [
     image: "https://uploads.teachablecdn.com/attachments/b6138d36c86a48d7b2d00ad38c045a34.jpg",
     tags: ["EF Core", "C#", "SQL Server"],
     pdfs: [
-      { url: "/ef-core.pdf", label: "PDF" },
+      { url: "/ef-core.pdf", label: "تحميل PDF" },
     ],
   },
 ];
