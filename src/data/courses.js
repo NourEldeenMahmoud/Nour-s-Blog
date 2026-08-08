@@ -9,7 +9,7 @@ export const courses = [
     category: "تطوير الويب",
     level: "مبتدئ",
     lessons: 243,
-    updated: "أغسطس 2026",
+    updated: "08/08/2026",
     image: "https://uploads.teachablecdn.com/attachments/c9b17ea78a28407782028acbe465b8ab.jpg",
     tags: ["JavaScript", "DOM", "Browser APIs"],
     pdfs: [
@@ -27,7 +27,7 @@ export const courses = [
     category: "Back-end",
     level: "متوسط",
     lessons: 58,
-    updated: "أغسطس 2026",
+    updated: "08/08/2026",
     image: "https://uploads.teachablecdn.com/attachments/is8vWy6HQNaPf6EoZNt1_25.jpg",
     tags: ["REST", "HTTP", "ASP.NET Core"],
     pdfs: [
@@ -44,7 +44,7 @@ export const courses = [
     category: "قواعد البيانات",
     level: "متوسط",
     lessons: 97,
-    updated: "أغسطس 2026",
+    updated: "08/08/2026",
     image: "https://uploads.teachablecdn.com/attachments/b6138d36c86a48d7b2d00ad38c045a34.jpg",
     tags: ["EF Core", "C#", "SQL Server"],
     pdfs: [
